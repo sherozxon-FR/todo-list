@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <!-- header -->
+      <header class="header">
+        <div class="time-container">
+          <h3 id="FullYear">Day:Month:Year</h3>
+          <span id="hour">Hh:</span>
+          <span id="minutes">Mm: </span>
+          <span id="second">Ss </span>
+        </div>
+
+        <h1 class="pragrif">todo list</h1>
+      </header>
+      <!-- main -->
+      <main class="main">
+        <form id="form-create" class="form">
+          <input
+            class="input"
+            type="text"
+            id="create-input"
+            placeholder="type-your todo list...!"
+          />
+          <button class="btn">add list</button>
+        </form>
+      </main>
+      <!-- error-message -->
+      <div class="error">
+        <span id="error-message" class="error-message">
+          <!-- iltimos textni bosh qoldirmang -->
+        </span>
+      </div>
+
+      <div class="listContainer" id="listContainer"></div>
+
+      <!-- modal -->
+      <div class="modal hiden" id="modal">
+        <div class="card">
+          <header class="modalHeader">
+            <p class="modal-text">change list</p>
+            <img id="close" src="./image/close.webp" alt="" width="10" height="10" />
+          </header>
+          <br />
+          <form class="modalForm" id="form-edit">
+            <input type="text" placeholder="change list" id="create-input"
+            class="modal-input">
+
+            <button class="btn">save list</button>
+          </form>
+          <li id="message-edit" ></li>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hiden" id="overlay"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
